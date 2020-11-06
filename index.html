@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />       
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />    
+    <link rel="stylesheet" href="./styles/style.css" type=text/css />    
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <title>Space Invaders</title>
+  </head>
+
+  <body>     
+    <section class="section1">
+    <div class="game-intro">
+      <img src="./images/logo.png" alt="Space Invaders" class="logo">
+      <br />
+      <a id="start-button" href="#"><img src="./images/button.jpeg" alt="start-button" class="button"></a>
+    </div>          
+
+    <div class="canvas-container">
+      <div class="score-container hide">
+        <h2>SCORE: </h2>
+        <span id="score"></span>
+      </div>
+      <canvas id="canvas" class="" width="600" height="1075"></canvas>
+    </div>
+
+    <img class="gameover hide" src="./images/game-over.png" alt="game-over">    
+    
+    </section>
+
+    <audio id="shoot" src="./sounds/shoot.wav"></audio>
+    <audio id="start" src="./sounds/start.wav"></audio>
+    <audio id="background" src="./sounds/background.wav"></audio>
+    
+    <script type="text/javascript" src="js/bullets.js"></script>
+    <script type="text/javascript" src="js/enemies.js"></script>    
+    <script type="text/javascript" src="js/player.js"></script>
+    <script type="text/javascript" src="js/game.js"></script>    
+    <script type="text/javascript" src="js/index.js"></script>
+  </body>  
+
+</html>
+
